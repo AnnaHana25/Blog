@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dm8b46clo
+  api_key: '999217597876744'
+  api_secret: "-fLjLglMJpipzvlBWuNF26mdha8"
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dm8b46clo
+  api_key: '999217597876744'
+  api_secret: "-fLjLglMJpipzvlBWuNF26mdha8"
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dm8b46clo
+  api_key: '999217597876744'
+  api_secret: "-fLjLglMJpipzvlBWuNF26mdha8"
+  enhance_image_tag: true
+  static_file_support: false

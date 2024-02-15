@@ -1,0 +1,4 @@
+<%= form_for(@post, url: facebook_posts_path, method: :post) do |f| %>
+  <%= f.hidden_field :id, value: @post.id %>
+  <%= f.submit 'Опублікувати на Facebook', class: 'btn btn-primary' %>
+<% end %>

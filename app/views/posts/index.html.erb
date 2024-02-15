@@ -1,0 +1,13 @@
+<h1>Список постів</h1>
+
+<%= link_to 'Новий пост', new_post_path %>
+
+<% @posts.each do |post| %>
+  <div>
+    <h2><%= link_to post.title, post %></h2>
+    <p><%= truncate(strip_tags(post.body), length: 100) %></p>
+    <%= link_to 'Показати', post %>
+    <%= link_to 'Редагувати', edit_post_path(post) %>
+    <%= link_to 'Видалити', post, method: :delete, data: { confirm: 'Ви впевнені?' } %>
+  </div>
+<% end %>
