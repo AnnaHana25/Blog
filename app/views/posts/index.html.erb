@@ -1,19 +1,24 @@
 <% if user_signed_in? %>
-  <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+  <p>Welcome <%= current_user.email %>!</p>
+  <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
 <% else %>
-  <%= link_to 'Sign up', new_user_registration_path %>
-  <%= link_to 'Login', new_user_session_path %>
+  <%= link_to 'Sign In', new_user_session_path %>
+  <%= link_to 'Sign Up', new_user_registration_path %>
 <% end %>
+
 <h1>Список постів</h1>
 
 <%= link_to 'Новий пост', new_post_path %>
-
+ <div class="post">
 <% @posts.each do |post| %>
-  <div>
+ 
     <h2><%= link_to post.title, post %></h2>
     <p><%= truncate(strip_tags(post.body), length: 100) %></p>
-    <%= link_to 'Показати', post %>
-    <%= link_to 'Редагувати', edit_post_path(post) %>
-    <%= link_to 'Видалити', post, method: :delete, data: { confirm: 'Ви впевнені?' } %>
-  </div>
+    <div class = buttons>
+   <b class = "button"> <%= link_to 'Показати', post %>   </b>
+      <b class = "button"> <%= link_to 'Редагувати', edit_post_path(post) %>   </b>
+     <b class = "button">  <%= link_to 'Видалити', post, method: :delete, data: { confirm: 'Ви впевнені?' } %>   </b>
+     <div>
+  
 <% end %>
+</div>

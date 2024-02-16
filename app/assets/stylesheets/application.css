@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+  background-color: rgb(226, 235, 235);
+  color: #000000;
+    font-size: 15px;
+    line-height: 1.6; 
+    padding: 15px;
+  }
+   
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1 {
+    font-size: 36px;  
+  }
+  
+  h2 {
+    font-size: 32px;
+  }  
+
+   .button{
+    border: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgba(232, 232, 232, 0.534);
+  } 
+  .button:hover{
+    background-color: aquamarine;
+  }
+   .buttons{
+   
+    height: 55px;
+  } 
+
+
+  .blog-title {
+    color: #225468;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+  }  
