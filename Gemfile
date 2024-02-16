@@ -75,3 +75,4 @@ gem "mini_magick", "~> 4.12"
 gem 'koala', '~> 3.5'
 
 gem 'dotenv-rails', '~> 3.0', '>= 3.0.1'
+gem "devise", "~> 4.9"
